@@ -11,6 +11,8 @@
 		E7A6FEFA1C62FFB700FB9FF4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A6FEF91C62FFB700FB9FF4 /* MainViewController.m */; };
 		E7A6FEFD1C62FFCC00FB9FF4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A6FEFC1C62FFCC00FB9FF4 /* DetailViewController.m */; };
 		E7A6FF001C62FFF200FB9FF4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A6FEFF1C62FFF200FB9FF4 /* SettingViewController.m */; };
+		E7A6FF041C63257200FB9FF4 /* LogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A6FF031C63257200FB9FF4 /* LogHelper.m */; };
+		E7A6FF071C6325BE00FB9FF4 /* StatisticsProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A6FF061C6325BE00FB9FF4 /* StatisticsProfile.m */; };
 		E7EFD3741C62F9AA004692C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EFD3731C62F9AA004692C5 /* main.m */; };
 		E7EFD3771C62F9AA004692C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EFD3761C62F9AA004692C5 /* AppDelegate.m */; };
 		E7EFD37D1C62F9AA004692C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7EFD37B1C62F9AA004692C5 /* Main.storyboard */; };
@@ -46,6 +48,10 @@
 		E7A6FEFC1C62FFCC00FB9FF4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E7A6FEFE1C62FFF200FB9FF4 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		E7A6FEFF1C62FFF200FB9FF4 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		E7A6FF021C63257200FB9FF4 /* LogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogHelper.h; sourceTree = "<group>"; };
+		E7A6FF031C63257200FB9FF4 /* LogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogHelper.m; sourceTree = "<group>"; };
+		E7A6FF051C6325BE00FB9FF4 /* StatisticsProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsProfile.h; sourceTree = "<group>"; };
+		E7A6FF061C6325BE00FB9FF4 /* StatisticsProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsProfile.m; sourceTree = "<group>"; };
 		E7EFD36F1C62F9AA004692C5 /* ZJLogHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJLogHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EFD3731C62F9AA004692C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7EFD3751C62F9AA004692C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +112,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E7A6FF011C63252D00FB9FF4 /* LogHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E7A6FF021C63257200FB9FF4 /* LogHelper.h */,
+				E7A6FF031C63257200FB9FF4 /* LogHelper.m */,
+				E7A6FF051C6325BE00FB9FF4 /* StatisticsProfile.h */,
+				E7A6FF061C6325BE00FB9FF4 /* StatisticsProfile.m */,
+			);
+			path = LogHelper;
+			sourceTree = "<group>";
+		};
 		E7EFD3661C62F9AA004692C5 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +148,7 @@
 		E7EFD3711C62F9AA004692C5 /* ZJLogHelper */ = {
 			isa = PBXGroup;
 			children = (
+				E7A6FF011C63252D00FB9FF4 /* LogHelper */,
 				E7EFD3751C62F9AA004692C5 /* AppDelegate.h */,
 				E7EFD3761C62F9AA004692C5 /* AppDelegate.m */,
 				E7A6FEF81C62FFB700FB9FF4 /* MainViewController.h */,
@@ -354,8 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A6FF071C6325BE00FB9FF4 /* StatisticsProfile.m in Sources */,
 				E7EFD3771C62F9AA004692C5 /* AppDelegate.m in Sources */,
 				E7A6FEFA1C62FFB700FB9FF4 /* MainViewController.m in Sources */,
+				E7A6FF041C63257200FB9FF4 /* LogHelper.m in Sources */,
 				E7EFD3741C62F9AA004692C5 /* main.m in Sources */,
 				E7A6FEFD1C62FFCC00FB9FF4 /* DetailViewController.m in Sources */,
 				E7A6FF001C62FFF200FB9FF4 /* SettingViewController.m in Sources */,

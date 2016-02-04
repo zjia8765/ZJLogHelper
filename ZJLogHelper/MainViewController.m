@@ -49,8 +49,17 @@
     UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc]initWithCustomView:settingBtn];
     self.navigationItem.rightBarButtonItem = rightButtonItem;
     
+    UIButton *userBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 60, 30)];
+    [userBtn setTitle:@"个人" forState:UIControlStateNormal];
+    userBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+    [userBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [userBtn addTarget:self action:@selector(userInfoBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+    userBtn.layer.borderColor = [UIColor blackColor].CGColor;
+    userBtn.layer.borderWidth = 1.0;
+    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc]initWithCustomView:userBtn];
+    self.navigationItem.leftBarButtonItem = leftButtonItem;
     
-    _listTableView= [[UITableView alloc]initWithFrame:CGRectZero];
+    _listTableView = [[UITableView alloc]initWithFrame:CGRectZero];
     _listTableView.delegate = self;
     _listTableView.dataSource = self;
     [self.view addSubview:_listTableView];
@@ -82,6 +91,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"showDetail" sender:nil];
+}
+
+-(void)userInfoBtnAction:(id)sender
+{
+    
 }
 
 -(void)settingBtnAction:(id)sender

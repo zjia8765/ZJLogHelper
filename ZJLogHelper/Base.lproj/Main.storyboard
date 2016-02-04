@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="Uez-Hh-ROD"/>
                     <connections>
                         <segue destination="Yg3-xl-5jM" kind="show" identifier="showDetail" id="AQW-eH-GDi"/>
-                        <segue destination="KvJ-hv-7gf" kind="show" identifier="showSetting" action="showDetailViewController:sender:" id="6sb-i6-FCz"/>
+                        <segue destination="KvJ-hv-7gf" kind="show" identifier="showSetting" id="6sb-i6-FCz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,6 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Cel-Oi-a1Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uY-bV-1QD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
