@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailViewController.h
 //  ZJLogHelper
 //
 //  Created by zhangjia on 16/2/4.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DetailViewController : UIViewController
 
 @end
-

@@ -1,1 +1,2 @@
 pod 'Aspects'
+pod 'Masonry'
