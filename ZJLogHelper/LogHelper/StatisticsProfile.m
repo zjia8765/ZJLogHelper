@@ -57,4 +57,41 @@
     }
     return _loggingConfig;
 }
+
+- (NSDictionary*)loggingConfigWithCustom
+{
+    if (!_loggingConfigWithCustom) {
+        NSDictionary *configDic = @{
+                                    @"MainViewController": @[
+                                            @{
+                                                LoggingEventSelect:@"settingBtnAction:",
+                                                LoggingEventName:@"setting button clicked",
+                                                LoggingEventHandlerBlock:^(id<AspectInfo> aspectInfo) {
+                                                    NSLog(@"setting button clicked");
+                                                }
+                                                },
+                                            @{
+                                                LoggingEventSelect:@"userInfoBtnAction:",
+                                                LoggingEventName:@"userinfo button clicked",
+                                                LoggingEventHandlerBlock:^(id<AspectInfo> aspectInfo) {
+                                                    NSLog(@"userinfo button clicked");
+                                                }
+                                                }
+                                            ],
+                                    
+                                    @"DetailViewController": @[
+                                            @{
+                                                LoggingEventSelect:@"tableView:didSelectRowAtIndexPath:",
+                                                LoggingEventName:@"tableView didclicked",
+                                                LoggingEventHandlerBlock:^(id<AspectInfo> aspectInfo) {
+                                                    NSLog(@"tableView didclicked");
+                                                }
+                                                }
+                                            ]
+                                    };
+        
+        _loggingConfigWithCustom = configDic;
+    }
+    return _loggingConfigWithCustom;
+}
 @end

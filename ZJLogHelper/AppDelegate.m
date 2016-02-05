@@ -19,8 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [LogHelper setupWithConfiguration];
-    
+//    [LogHelper setupWithConfiguration];
+    [LogHelper setupCustomWithConfiguration];
     return YES;
 }
 

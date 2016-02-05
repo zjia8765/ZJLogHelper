@@ -10,4 +10,5 @@
 
 @interface LogHelper : NSObject
 +(void)setupWithConfiguration;
++(void)setupCustomWithConfiguration;
 @end

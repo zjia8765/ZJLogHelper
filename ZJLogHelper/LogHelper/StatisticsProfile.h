@@ -16,8 +16,11 @@
 #define LoggingEventHandlerBlock @"LoggingEventHandlerBlock"
 //UITableView 点击事件
 #define LogTableViewDidSelect @"LogTableViewDidSelect"
+//事件
+#define LoggingEventSelect @"LoggingEventSelect"
 @interface StatisticsProfile : NSObject
 @property (nonatomic,strong) NSDictionary *loggingConfig;
+@property (nonatomic,strong) NSDictionary *loggingConfigWithCustom;
 + (instancetype)sharedInstance;
 
 @end
